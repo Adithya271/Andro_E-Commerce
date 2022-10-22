@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.adithyarachmat.e_commerce" >
+    package="com.adithyarachmat.e_commerce">
 
     <application
         android:allowBackup="true"
@@ -8,7 +8,16 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Design.Light.NoActionBar" >
+        android:theme="@style/Theme.AppCompat.DayNight">
+        <activity
+            android:name=".Home.ClothingAcc.ClothingCategory"
+            android:exported="false" />
+        <activity
+            android:name=".Home.ClothingAcc.ClothingFilter"
+            android:exported="false" />
+        <activity
+            android:name=".Login.SplashActivity"
+            android:exported="false" />
         <activity
             android:name=".Login.LoginActivity"
             android:exported="false" />
@@ -31,8 +40,8 @@
             android:name=".Admin.AdminLogin"
             android:exported="false" />
         <activity
-            android:name=".Login.SplashActivity"
-            android:exported="true" >
+            android:name=".Home.HomePages"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

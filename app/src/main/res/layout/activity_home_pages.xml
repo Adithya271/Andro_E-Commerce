@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    tools:context=".Home.HomePages">
+
+    <ImageView
+        android:id="@+id/img1"
+        android:onClick="ClothingOnClick"
+        android:layout_width="200sp"
+        android:layout_height="300sp"
+        android:src="@drawable/baju" />
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:text="CLOTHING AND ACCESSORIES"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@id/img1"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/img2"
+        android:onClick="ElectronicsOnClick"
+        android:layout_width="200sp"
+        android:layout_height="300sp"
+        android:layout_toRightOf="@id/img1"
+        android:src="@drawable/electronics" />
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:text="ELECTRONICS"
+        android:textStyle="bold"
+        android:layout_marginLeft="60dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/img2"
+        android:layout_toRightOf="@id/txt1"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/img3"
+        android:onClick="BookOnClick"
+        android:layout_width="200sp"
+        android:layout_height="300sp"
+        android:layout_below="@id/img1"
+        android:src="@drawable/susunanbuku" />
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:text="BOOKS"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@id/img3"
+        android:layout_marginLeft="60dp"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/img4"
+        android:onClick="OthersOnClcik"
+        android:layout_width="200sp"
+        android:layout_height="300sp"
+        android:layout_below="@id/img2"
+        android:layout_toRightOf="@id/img3"
+        android:src="@drawable/others" />
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="wrap_content"
+        android:text="OTHER ITEMS"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@id/img4"
+        android:layout_toRightOf="@id/txt3"
+        android:layout_marginLeft="150dp"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
