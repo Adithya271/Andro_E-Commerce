@@ -8,9 +8,15 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.DayNight">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
-            android:name=".Home.ClothingAcc.ClothingCategory"
+            android:name=".Home.ClothingAcc.Men.DetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Home.ClothingAcc.Men.TshirtList"
+            android:exported="false" />
+        <activity
+            android:name=".Home.ClothingAcc.Men.ClothingCategory"
             android:exported="false" />
         <activity
             android:name=".Home.ClothingAcc.ClothingFilter"
