@@ -10,7 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
-            android:name=".Home.ClothingAcc.Men.DetailsActivity"
+            android:name=".Home.Electronics.Computers.ComputerAsusRogDetails"
+            android:exported="false" />
+        <activity
+            android:name=".Home.Electronics.Smartphones.SmartphoneList"
+            android:exported="false" />
+        <activity
+            android:name=".Home.Electronics.Computers.ComputerList"
+            android:exported="false" />
+        <activity
+            android:name=".Home.Electronics.ElectronicsCategoryProducts"
+            android:exported="false" />
+        <activity
+            android:name=".Home.ClothingAcc.Men.Tshirt1DetailsActivity"
             android:exported="false" />
         <activity
             android:name=".Home.ClothingAcc.Men.TshirtList"

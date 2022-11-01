@@ -33,10 +33,10 @@
 
     <ImageView
         android:id="@+id/img2"
-        android:onClick="ElectronicsOnClick"
         android:layout_width="200sp"
         android:layout_height="300sp"
         android:layout_toRightOf="@id/img1"
+        android:onClick="ElectronicsOnClick"
         android:src="@drawable/electronics" />
     <TextView
         android:id="@+id/txt2"

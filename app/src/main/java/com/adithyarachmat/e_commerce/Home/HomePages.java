@@ -13,10 +13,11 @@ import android.widget.ImageView;
 
 import com.adithyarachmat.e_commerce.Admin.AdminPage;
 import com.adithyarachmat.e_commerce.Home.ClothingAcc.ClothingFilter;
+import com.adithyarachmat.e_commerce.Home.Electronics.ElectronicsCategoryProducts;
 import com.adithyarachmat.e_commerce.R;
 
 public class HomePages extends AppCompatActivity {
-    private ImageView img1;
+    private ImageView img1,img2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,7 @@ public class HomePages extends AppCompatActivity {
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
         img1 = findViewById(R.id.img1);
+        img2 = findViewById(R.id.img2);
 
     }
 
@@ -60,6 +62,13 @@ public class HomePages extends AppCompatActivity {
 
 
     public void ElectronicsOnClick(View view) {
+        img2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent iElectronics = new Intent(getApplicationContext(), ElectronicsCategoryProducts.class);
+                startActivity(iElectronics);
+            }
+        });
     }
 
     public void BookOnClick(View view) {

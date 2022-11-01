@@ -1,4 +1,4 @@
-package com.adithyarachmat.e_commerce.Home.ClothingAcc.Men;
+package com.adithyarachmat.e_commerce.Home.Electronics.Computers;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.adithyarachmat.e_commerce.R;
 
-public class DetailsActivity extends AppCompatActivity {
+public class ComputerAsusRogDetails extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_details);
+        setContentView(R.layout.activity_computer_asusrog_details);
     }
 }
