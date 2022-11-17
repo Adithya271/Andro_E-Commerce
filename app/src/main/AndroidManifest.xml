@@ -10,6 +10,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
+            android:name=".Home.ClothingAcc.Men.Tshirt2DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".About.AboutPage"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.StaffLogin"
+            android:exported="false" />
+        <activity
+            android:name=".Home.OtherItems.OtherItem1Detail"
+            android:exported="false" />
+        <activity
+            android:name=".Home.OtherItems.OtherItemList"
+            android:exported="false" />
+        <activity
+            android:name=".Home.Books.Book1Detail"
+            android:exported="false" />
+        <activity
+            android:name=".Home.Books.BookList"
+            android:exported="false" />
+        <activity
+            android:name=".Home.Electronics.ElectronicsCategoryProducts"
+            android:exported="false" />
+        <activity
             android:name=".Home.Electronics.Computers.ComputerAsusRogDetails"
             android:exported="false" />
         <activity
@@ -17,9 +41,6 @@
             android:exported="false" />
         <activity
             android:name=".Home.Electronics.Computers.ComputerList"
-            android:exported="false" />
-        <activity
-            android:name=".Home.Electronics.ElectronicsCategoryProducts"
             android:exported="false" />
         <activity
             android:name=".Home.ClothingAcc.Men.Tshirt1DetailsActivity"
@@ -34,7 +55,7 @@
             android:name=".Home.ClothingAcc.ClothingFilter"
             android:exported="false" />
         <activity
-            android:name=".Login.SplashActivity"
+            android:name=".Login.MainActivity"
             android:exported="false" />
         <activity
             android:name=".Login.LoginActivity"
@@ -43,7 +64,7 @@
             android:name=".Login.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".Login.MainActivity"
+            android:name=".Home.HomePages"
             android:exported="false" />
         <activity
             android:name=".Admin.RegisterStaff"
@@ -58,7 +79,7 @@
             android:name=".Admin.AdminLogin"
             android:exported="false" />
         <activity
-            android:name=".Home.HomePages"
+            android:name=".Login.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

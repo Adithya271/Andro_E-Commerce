@@ -42,7 +42,7 @@
         android:layout_marginTop="90dp"
         android:layout_width="350dp"
         android:layout_height="60dp"
-        android:text="Create Account"
+        android:text="Login"
         android:textColor="@color/white"
         android:textStyle="bold"
         android:textAllCaps="false"

@@ -12,12 +12,14 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.adithyarachmat.e_commerce.Admin.AdminPage;
+import com.adithyarachmat.e_commerce.Home.Books.BookList;
 import com.adithyarachmat.e_commerce.Home.ClothingAcc.ClothingFilter;
 import com.adithyarachmat.e_commerce.Home.Electronics.ElectronicsCategoryProducts;
+import com.adithyarachmat.e_commerce.Home.OtherItems.OtherItemList;
 import com.adithyarachmat.e_commerce.R;
 
 public class HomePages extends AppCompatActivity {
-    private ImageView img1,img2;
+    private ImageView img1,img2,img3,img4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +29,8 @@ public class HomePages extends AppCompatActivity {
         setSupportActionBar(myToolbar);
         img1 = findViewById(R.id.img1);
         img2 = findViewById(R.id.img2);
+        img3 = findViewById(R.id.img3);
+        img4 = findViewById(R.id.img4);
 
     }
 
@@ -72,8 +76,22 @@ public class HomePages extends AppCompatActivity {
     }
 
     public void BookOnClick(View view) {
+        img3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent iBook = new Intent(getApplicationContext(), BookList.class);
+                startActivity(iBook);
+            }
+        });
     }
 
     public void OthersOnClcik(View view) {
+        img4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent iOtherItem = new Intent(getApplicationContext(), OtherItemList.class);
+                startActivity(iOtherItem);
+            }
+        });
     }
 }

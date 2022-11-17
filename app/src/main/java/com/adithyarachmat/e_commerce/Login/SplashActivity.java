@@ -10,7 +10,7 @@ import com.adithyarachmat.e_commerce.R;
 
 public class SplashActivity extends AppCompatActivity {
 
-    private int waktu_loading=5000;
+    private int waktu_loading=2000;
     //4000=4 detik
     @Override
     protected void onCreate(Bundle savedInstanceState) {

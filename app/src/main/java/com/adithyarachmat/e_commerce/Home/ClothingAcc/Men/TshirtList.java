@@ -21,6 +21,8 @@ public class TshirtList extends AppCompatActivity {
     }
 
     public void img2OnClick(View view) {
+        Intent iTshirts2 = new Intent(getApplicationContext(), Tshirt2DetailActivity.class);
+        startActivity(iTshirts2);
     }
 
     public void img1OnClick(View view) {

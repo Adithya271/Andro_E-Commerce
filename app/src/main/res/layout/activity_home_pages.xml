@@ -51,10 +51,10 @@
 
     <ImageView
         android:id="@+id/img3"
-        android:onClick="BookOnClick"
         android:layout_width="200sp"
         android:layout_height="300sp"
         android:layout_below="@id/img1"
+        android:onClick="BookOnClick"
         android:src="@drawable/susunanbuku" />
     <TextView
         android:id="@+id/txt3"

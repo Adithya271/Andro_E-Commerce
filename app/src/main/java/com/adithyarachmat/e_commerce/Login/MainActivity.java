@@ -8,8 +8,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.adithyarachmat.e_commerce.About.AboutPage;
 import com.adithyarachmat.e_commerce.Admin.AdminLogin;
 import com.adithyarachmat.e_commerce.Admin.AdminPage;
+import com.adithyarachmat.e_commerce.Admin.StaffLogin;
 import com.adithyarachmat.e_commerce.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         btnToRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent iToRegister = new Intent(getApplicationContext(), LoginActivity.class);
+                Intent iToRegister = new Intent(getApplicationContext(), RegisterActivity.class);
                 startActivity(iToRegister);
             }
         });
@@ -35,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         btnToLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent iToLogin = new Intent(getApplicationContext(), RegisterActivity.class);
+                Intent iToLogin = new Intent(getApplicationContext(), LoginActivity.class);
                 startActivity(iToLogin);
             }
         });
@@ -59,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         TVtostafflogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent iToStaffLogin = new Intent(getApplicationContext(), AdminPage.class);
+                Intent iToStaffLogin = new Intent(getApplicationContext(), StaffLogin.class);
                 startActivity(iToStaffLogin);
             }
         });
@@ -67,6 +69,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void AboutOnClick(View view) {
         TVtoabout = findViewById(R.id.TVabout);
+
+        TVtoabout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent iToAbout = new Intent(getApplicationContext(), AboutPage.class);
+                startActivity(iToAbout);
+            }
+        });
 
     }
 }
